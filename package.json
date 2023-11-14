@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "prettier": "prettier --write warn .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commit": "npx cz"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -15,6 +16,8 @@
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.4.1",
+    "@commitlint/config-conventional": "^18.4.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
@@ -25,6 +28,7 @@
     "@vue/eslint-config-typescript": "^9.1.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
+    "cz-conventional-changelog-zh-cn": "^0.0.7",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -37,7 +41,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog-zh-cn"
     }
   }
 }
